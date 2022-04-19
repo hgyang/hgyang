@@ -1,0 +1,36 @@
+Laufzeitverhalten und Methodenbeschreibung
+
+
+1. Datei angeben/definieren (Path!)
+
+
+2. Datei lesen
+
+
+3. Datei analysieren (Triplet-Kombinationen in einer Array-Liste sammeln)
+
+	3.1 for-Schleife teilt die Buchstaben in Triplets ein 
+		3.1.1 Möglichkeit 1: Substring: 0.-2./3.-5. Stelle usw. jeweils als eigene Variable
+		3.1.2 Möglichkeit 2: Schleife über Index i bis i+2 (Papa: i+3?)
+		
+	3.2 if-Schleife verwirft schon bekannte Kombinationen
+	
+  -> In Methode auslagern? (Eingabe: gelesene Zeile; Return Ergebnis: Array-Liste)
+  
+  
+ 4. Methode für Zeilen nur mit einer Triplet-Kombination, der Rest "-"
+ 	Input: Originalzeile + ein Triplet;  3.2; Output: Neue Zeile als String)
+  	   -> auslagern!
+  	   
+  
+ 5. Neue Datei öffnen
+ 
+ 	5.1 Path angeben/definieren (Neuer Name!)
+ 	
+ 	5.2 String-Liste für neue Datei erstellen (leer)
+ 		5.2.1 Original-Zeile als erste Zeile
+  		5.2.2 Schleifen der Methode aus 4 über alle möglichen Triplet-Kombinationen aus der Array-Liste (3.2)
+  		
+  	5.3 String-Array (aus 4.2) in die Ausgabe-Datei (Path aus 4.1) schreiben
+  	   
+  	
